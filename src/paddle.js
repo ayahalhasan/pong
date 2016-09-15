@@ -8,12 +8,7 @@ export default class Paddle {
         this.y = (height / 2) - (this.height / 2);
         this.speed = 10;
         this.maxHeight = height;
-        // this.maxWidth = width;
         this.score = score;
-
-
-        // this.y = Math.max(Math.min(this.y, height - this.height), 0);
-
 
         document.addEventListener('keydown', event => {
             switch (event.keyCode) {

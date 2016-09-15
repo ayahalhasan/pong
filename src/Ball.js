@@ -42,7 +42,7 @@ export default class Ball {
        this.vy = -this.vy;
    }
 
-//paddle collisio method
+//paddle collision method
     paddleCollision(player1, player2) {
         if (this.vx > 0) {
             const inRightEnd = player2.x <= this.x + this.size &&
@@ -84,12 +84,10 @@ export default class Ball {
         if (this.x <= 0) {
             player2.addScore();
             this.goal(width, height);
-
         }
         else if (this.x >= width) {
             player1.addScore();
             this.goal(width, height);
-
         }
 
     }
