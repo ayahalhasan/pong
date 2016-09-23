@@ -3,12 +3,21 @@ const paddleSound = new Audio('./sounds/pong-03.wav');
 
 const size = 5;
 
+function getBallDirection() {
+  const direction = (7 - Math.abs(this.vy)-7);
+  if (direction === 0) {
+    return getBallDirection();
+  } else {
+    return direction;
+  }
+}
+
 export default class Ball {
     constructor(height, width) {
         this.x = width / 2; // random x
         this.y = height / 2; // random y
         this.vy = Math.floor(Math.random() * 12 - 6);
-        this.vx = (7 - Math.abs(this.vy)-7);
+        this.vx = getBallDirection();
         this.size = size;
         this.height = height;
         this.width = width;
