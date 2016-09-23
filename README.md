@@ -1,29 +1,21 @@
 # Pong Game
 
-A basic pong game using HTML5 Canvas. 
+This is a basic pong game that used HTML5 Canvas. The purpose of this project is to explore the ES6 by using Object Oriented Programming (OOP).
 
-## Setup
+#Technologies Used
 
-##### Install
+* HTML5
+* CSS3
+* JavaScript ES6
+* webpack
 
-`> npm i`
-
-##### Run
-
-`> npm start`
-
-##### Build
-
-`> npm build`
 
 ## Keys
 
 ##### Player 1:
 * a: up
 * z: down
-* q: fire a new ball
 
 ##### Player 2:
 * ▲ : up
 * ▼: down
-* /: fire a new ball
