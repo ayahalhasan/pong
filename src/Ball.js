@@ -1,5 +1,5 @@
-const wallSound = new Audio('../sounds/pong-01.wav');
-const paddleSound = new Audio('../sounds/pong-03.wav');
+const wallSound = new Audio('./sounds/pong-01.wav');
+const paddleSound = new Audio('./sounds/pong-03.wav');
 
 const size = 5;
 
